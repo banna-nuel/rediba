@@ -1,0 +1,83 @@
+---
+---
+<section id="solucion" class="container">
+    <h2 class="section-title animate-on-scroll">Nuestra Solución Integral</h2>
+    <div class="solucion-grid">
+        <div class="solucion-col animate-on-scroll">
+            <h3>App para el ciudadano</h3>
+            <ul>
+                <li>Tracking de camiones en tiempo real</li>
+                <li>Notificaciones de proximidad del vehículo</li>
+                <li>Reporte de problemas con fotos y ubicación GPS</li>
+                <li>Consulta de horarios y frecuencias</li>
+            </ul>
+        </div>
+        <div class="solucion-col animate-on-scroll" style="transition-delay: 0.2s;">
+            <h3>Sistema en la oficina</h3>
+            <ul>
+                <li>Gestión digital y optimización de rutas</li>
+                <li>Monitoreo de la flota en tiempo real</li>
+                <li>Administración centralizada de quejas y reportes</li>
+                <li>Análisis de datos para toma de decisiones</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<style>
+    section {
+        padding: 100px 0;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin-bottom: 60px;
+        color: var(--text-main);
+    }
+
+    .solucion-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    @media (min-width: 768px) {
+        .solucion-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .solucion-col {
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-detail);
+        border-radius: 20px;
+        padding: 50px 40px;
+    }
+
+    .solucion-col h3 {
+        color: var(--accent-sec);
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .solucion-col ul {
+        list-style: none;
+    }
+
+    .solucion-col ul li {
+        margin-bottom: 15px;
+        padding-left: 30px;
+        position: relative;
+        color: var(--text-sec);
+    }
+
+    .solucion-col ul li::before {
+        content: '→';
+        position: absolute;
+        left: 0;
+        color: var(--accent-main);
+        font-weight: bold;
+    }
+</style>

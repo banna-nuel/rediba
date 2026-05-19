@@ -1,0 +1,82 @@
+---
+---
+<section id="beneficios" class="container">
+    <h2 class="section-title animate-on-scroll">Beneficios Clave</h2>
+    <div class="grid-2x2">
+        <div class="card animate-on-scroll">
+            <div class="card-icon">💰</div>
+            <h3>Menos costos</h3>
+            <p>Optimización de rutas y combustible gracias a la gestión digital.</p>
+        </div>
+        <div class="card animate-on-scroll">
+            <div class="card-icon">📈</div>
+            <h3>Más productividad</h3>
+            <p>Reducción de tiempos muertos y mejor administración de recursos.</p>
+        </div>
+        <div class="card animate-on-scroll">
+            <div class="card-icon">😊</div>
+            <h3>Vecinos felices</h3>
+            <p>Transparencia, puntualidad y atención rápida a los reportes de la comunidad.</p>
+        </div>
+        <div class="card animate-on-scroll">
+            <div class="card-icon">🌱</div>
+            <h3>Cero papeles</h3>
+            <p>Un proceso 100% digital que cuida el medio ambiente y agiliza la gestión.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    section {
+        padding: 100px 0;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin-bottom: 60px;
+        color: var(--text-main);
+    }
+
+    .grid-2x2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    @media (min-width: 600px) {
+        .grid-2x2 {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .card {
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-detail);
+        border-radius: 20px;
+        padding: 40px 30px;
+        text-align: center;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        border-color: var(--accent-main);
+    }
+
+    .card-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: var(--accent-sec);
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .card p {
+        color: var(--text-sec);
+        font-size: 0.95rem;
+    }
+</style>

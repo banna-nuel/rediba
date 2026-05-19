@@ -1,0 +1,81 @@
+---
+---
+<footer>
+    <div class="footer-cta animate-on-scroll">
+        <a href="#" class="btn btn-descarga">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Descargar Propuesta
+        </a>
+    </div>
+    <div class="footer-info">
+        <h4 class="title-font">Rediba S.A. E.S.P.</h4>
+        <p>Barrancabermeja, 2026</p>
+    </div>
+</footer>
+
+<script>
+    // Intercepción de click en el botón de descarga
+    const btnDescarga = document.querySelector('.btn-descarga');
+    if (btnDescarga) {
+        btnDescarga.addEventListener('click', (e) => {
+            e.preventDefault();
+            // Opcional: añadir algún efecto visual de feedback si se desea
+        });
+    }
+</script>
+
+<style>
+    footer {
+        padding: 100px 20px 50px;
+        text-align: center;
+        border-top: 1px solid var(--border-detail);
+        margin-top: 50px;
+    }
+
+    .footer-cta {
+        margin-bottom: 80px;
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: var(--accent-main);
+        color: var(--text-main);
+        padding: 16px 32px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 700;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 20px var(--accent-main);
+    }
+
+    .btn-descarga {
+        font-size: 1.2rem;
+        padding: 20px 40px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-info {
+        color: var(--text-sec);
+        font-size: 0.9rem;
+    }
+
+    .footer-info h4 {
+        color: var(--text-main);
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+</style>

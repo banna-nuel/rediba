@@ -1,0 +1,71 @@
+---
+---
+<section id="diagnostico" class="container">
+    <h2 class="section-title animate-on-scroll">El Desafío Actual</h2>
+    <div class="grid-3">
+        <div class="card animate-on-scroll">
+            <div class="card-icon">🚛</div>
+            <h3>Sin rastreo de camiones</h3>
+            <p>Imposibilidad de conocer la ubicación exacta y el progreso de las rutas en tiempo real.</p>
+        </div>
+        <div class="card animate-on-scroll" style="transition-delay: 0.2s;">
+            <div class="card-icon">📄</div>
+            <h3>Todo en papel</h3>
+            <p>Procesos administrativos manuales que generan retrasos y pérdida de información valiosa.</p>
+        </div>
+        <div class="card animate-on-scroll" style="transition-delay: 0.4s;">
+            <div class="card-icon">🏘️</div>
+            <h3>Vecinos sin información</h3>
+            <p>La comunidad desconoce los horarios reales y no tiene un canal eficiente para reportar incidentes.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    section {
+        padding: 100px 0;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin-bottom: 60px;
+        color: var(--text-main);
+    }
+
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    .card {
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-detail);
+        border-radius: 20px;
+        padding: 40px 30px;
+        text-align: center;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        border-color: var(--accent-main);
+    }
+
+    .card-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: var(--accent-sec);
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .card p {
+        color: var(--text-sec);
+        font-size: 0.95rem;
+    }
+</style>
